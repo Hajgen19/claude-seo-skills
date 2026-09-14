@@ -9,8 +9,8 @@
     {
       "name": "seo-skills",
       "source": "./plugins/seo-skills",
-      "description": "Sieben SEO-Skills für Claude: sechs Routinen und Audits mit Live-Daten per MCP oder CSV-Export (Search Console, GA4, Google Ads) plus die vollständige Keyword-Recherche seo-page-research für Claude Code. Deutsch, nur lesende Befehle.",
-      "version": "0.2.0",
+      "description": "Neun SEO-Skills für Claude: acht Routinen und Audits mit Live-Daten per MCP oder CSV-Export (Search Console, GA4, Google Ads) plus die vollständige Keyword-Recherche seo-page-research für Claude Code. Deutsch, nur lesende Befehle.",
+      "version": "0.3.0",
       "author": {
         "name": "Hagen Krocker",
         "url": "https://mcpwerk.com/autor/hagen-krocker"
