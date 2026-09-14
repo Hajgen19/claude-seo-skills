@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mcpwerk-search-console": {
+      "type": "http",
+      "url": "https://mcp.mcpwerk.com/gsc/mcp"
+    },
+    "mcpwerk-analytics": {
+      "type": "http",
+      "url": "https://mcp.mcpwerk.com/ga4/mcp"
+    },
+    "mcpwerk-google-ads": {
+      "type": "http",
+      "url": "https://mcp.mcpwerk.com/ads/mcp"
+    }
+  }
+}

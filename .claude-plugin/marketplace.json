@@ -1,0 +1,30 @@
+{
+  "name": "claude-seo-skills",
+  "description": "SEO-Skills für Claude mit Live-Daten per MCP (Search Console, GA4, Google Ads). Deutsch, nur lesende Befehle, MIT.",
+  "owner": {
+    "name": "Hagen Krocker (mcpwerk)",
+    "url": "https://mcpwerk.com"
+  },
+  "plugins": [
+    {
+      "name": "seo-skills",
+      "source": "./plugins/seo-skills",
+      "description": "Sechs SEO-Skills für Claude, die ihre Daten live per MCP holen: Search Console (Wochen-Check, Chancen-Keywords, Kannibalisierung, Indexierung), GA4 (Zeitraum-Vergleich) und Google Ads (Budget-Check). Deutsch, nur lesende Befehle.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hagen Krocker",
+        "url": "https://mcpwerk.com/autor/hagen-krocker"
+      },
+      "homepage": "https://github.com/Hajgen19/claude-seo-skills",
+      "license": "MIT",
+      "keywords": [
+        "seo",
+        "search-console",
+        "ga4",
+        "google-ads",
+        "mcp",
+        "deutsch"
+      ]
+    }
+  ]
+}
