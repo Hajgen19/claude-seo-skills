@@ -1,6 +1,6 @@
 ---
 name: gsc-update-kandidaten
-description: Findet in der Search Console die Seiten, die über 6 bis 12 Monate am stärksten verloren haben und vorher stark waren – Kandidaten für eine Aktualisierung. Per MCP oder CSV-Export. Nutzen bei Update-Kandidaten, Content-Refresh, Ranking verloren.
+description: Findet Seiten, die über 6–12 Monate am stärksten verloren haben und vorher stark waren – Update-Kandidaten, per MCP oder CSV-Export. Nutzen bei Update-Kandidaten, Content-Refresh.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Search-Console-MCP mit compare_search_periods, get_search_by_page_query und list_properties (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
 allowed-tools: mcp__mcpwerk-gsc__compare_search_periods mcp__mcpwerk-gsc__get_search_by_page_query mcp__mcpwerk-gsc__get_advanced_search_analytics mcp__mcpwerk-gsc__list_properties

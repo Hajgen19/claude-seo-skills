@@ -1,6 +1,6 @@
 ---
 name: ga4-anomalie-check
-description: Prüft in Google Analytics 4, ob Ereignisse oder Key Events plötzlich ausbleiben oder einbrechen – Hinweis auf kaputtes Tracking nach Änderungen. Per MCP oder CSV-Export. Nutzen bei Anomalie-Check, Tracking prüfen, Event läuft nicht mehr ein.
+description: Prüft in GA4, ob Ereignisse oder Key Events plötzlich ausbleiben oder einbrechen – Hinweis auf kaputtes Tracking, per MCP oder CSV-Export. Nutzen bei Anomalie-Check, Tracking prüfen.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Analytics-4-MCP mit get_ga4_data, batch_run_reports und list_accounts_and_properties (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
 allowed-tools: mcp__mcpwerk-ga4__get_ga4_data mcp__mcpwerk-ga4__batch_run_reports mcp__mcpwerk-ga4__list_accounts_and_properties
