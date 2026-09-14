@@ -1,9 +1,9 @@
 ---
 name: ga4-zeitraum-vergleich
-description: Vergleicht in GA4 zwei frei wählbare Zeiträume nach Kanal und Landingpage, nennt Gewinner, Verlierer und Potenziale. Nutzen bei GA4-Vergleich, Vormonat vergleichen, wo wächst der Traffic.
+description: Vergleicht in GA4 zwei frei wählbare Zeiträume nach Kanal und Landingpage, nennt Gewinner, Verlierer, Potenziale – per MCP oder CSV-Export. Nutzen bei GA4-Vergleich, wo wächst der Traffic.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Analytics-4-MCP mit batch_run_reports, get_ga4_data und list_accounts_and_properties (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
-allowed-tools: mcp__mcpwerk-analytics__batch_run_reports mcp__mcpwerk-analytics__get_ga4_data mcp__mcpwerk-analytics__list_accounts_and_properties
+allowed-tools: mcp__mcpwerk-ga4__batch_run_reports mcp__mcpwerk-ga4__get_ga4_data mcp__mcpwerk-ga4__list_accounts_and_properties
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -62,6 +62,22 @@ Conversions, eine Seite, die von selbst anzieht. Du liest nur, du
 **Potenziale** (bis zu drei, je ein Satz mit Zahl und Vorschlag).
 
 Zwei Sätze Einordnung zur Gesamtrichtung.
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Export für diesen Skill: GA4 → Berichte → Akquisition → „Trafficakquisition"
+(Kanäle) und Interaktion → „Landingpage", jeweils mit eingestelltem
+Vergleichszeitraum, dann „Freigeben" → „Datei herunterladen" → CSV. Die
+Datei enthält beide Zeiträume nebeneinander. Fehlt der Vergleich, bitte um
+je einen Export pro Zeitraum. Metriken: Sitzungen, Nutzer, Key Events
+(Conversions), Interaktionsrate.
 
 ## Regeln
 

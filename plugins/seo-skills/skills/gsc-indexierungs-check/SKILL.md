@@ -1,9 +1,9 @@
 ---
 name: gsc-indexierungs-check
-description: Prüft den Indexierungsstatus einer URL-Liste in der Search Console und nennt nicht indexierte Seiten mit Grund. Nutzen bei Indexierung prüfen, ist die Seite indexiert, nach Relaunch oder Deploy.
+description: Prüft den Indexierungsstatus von URLs in der Search Console und nennt nicht indexierte Seiten mit Grund – per MCP oder CSV-Export. Nutzen bei Indexierung prüfen, nach Deploy.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Search-Console-MCP mit check_indexing_issues, batch_url_inspection und list_sitemaps_enhanced (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
-allowed-tools: mcp__mcpwerk-search-console__check_indexing_issues mcp__mcpwerk-search-console__batch_url_inspection mcp__mcpwerk-search-console__list_sitemaps_enhanced mcp__mcpwerk-search-console__list_properties
+allowed-tools: mcp__mcpwerk-gsc__check_indexing_issues mcp__mcpwerk-gsc__batch_url_inspection mcp__mcpwerk-gsc__list_sitemaps_enhanced mcp__mcpwerk-gsc__list_properties
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -56,6 +56,23 @@ Empfehlung je Fall in einem Satz: "URL ist Google unbekannt" heißt meist
 fehlende interne Verlinkung oder Sitemap-Eintrag; "gecrawlt, nicht
 indexiert" heißt Inhalt oder Duplikat prüfen; Canonical auf eine andere URL
 ist oft gewollt; robots-Sperre gegen die Absicht abgleichen.
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Export für diesen Skill: Search Console → Indexierung → Seiten → Export →
+CSV. Die Tabelle listet je Grund („Gecrawlt – zurzeit nicht indexiert",
+„Duplikat …", „Durch robots.txt blockiert" …) die Anzahl der Seiten; die
+betroffenen URLs stehen in den Detail-Exporten je Grund. Ordne die
+Gründe nach Anzahl, erkläre je Grund in einem Satz, was er bedeutet, und
+gib die Empfehlung aus der Vorlage. Eine Einzelprüfung mit letztem Crawl
+gibt es ohne MCP nicht.
 
 ## Regeln
 

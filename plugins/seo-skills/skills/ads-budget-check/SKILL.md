@@ -1,9 +1,9 @@
 ---
 name: ads-budget-check
-description: Prüft in Google Ads, wohin das Budget floss: Keywords und Suchbegriffe mit Kosten ohne Conversions, teure Klicks, Negativ-Vorschläge. Nutzen bei Budget-Check, wasted spend, was kostet nur.
+description: Prüft in Google Ads, wohin das Budget floss: Keywords und Suchbegriffe mit Kosten ohne Conversions, Negativ-Vorschläge – per MCP oder CSV-Download. Nutzen bei Budget-Check, wasted spend.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Ads-MCP mit run_gaql und list_accounts (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" bzw. "Analyse & Keyword-Recherche" reicht).
-allowed-tools: mcp__mcpwerk-google-ads__run_gaql mcp__mcpwerk-google-ads__list_accounts
+allowed-tools: mcp__mcpwerk-ads__run_gaql mcp__mcpwerk-ads__list_accounts
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -74,6 +74,21 @@ Gesamt: Kosten, Klicks, Conversions, Kosten je Klick.
 Negativ-Keyword sinnvoll wären; Keywords, deren Übereinstimmungstyp zu
 weit ist; Keywords, die man beobachten sollte, weil die Zahlen noch klein
 sind.
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Export für diesen Skill: Google Ads → Kampagnen → „Suchkeywords" (Tabelle
+mit Kosten, Klicks, Impressionen, Conversions, Klickrate, Zeitraum 30
+Tage) → Download → CSV; zusätzlich „Suchbegriffe" → Download → CSV.
+Kosten stehen im Export bereits in Währung, nicht in Micros. Entferne
+Summenzeilen am Tabellenende, bevor du sortierst.
 
 ## Regeln
 

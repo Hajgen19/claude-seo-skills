@@ -1,9 +1,9 @@
 ---
 name: gsc-wochen-check
-description: Search-Console-Check: Zeitraum (Standard 7 Tage) gegen den davor, Gewinner- und Verlierer-Seiten, eine Maßnahme. Nutzen bei Wochen-Check, Wochenreport, Monats-Check, weekly SEO check.
+description: Search-Console-Check: Zeitraum (Standard 7 Tage) gegen den davor, Gewinner- und Verlierer-Seiten, eine Maßnahme – per MCP oder CSV-Export. Nutzen bei Wochen-Check, Wochenreport, weekly SEO check.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Search-Console-MCP mit den Befehlen compare_search_periods, get_performance_overview und list_properties (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
-allowed-tools: mcp__mcpwerk-search-console__compare_search_periods mcp__mcpwerk-search-console__get_performance_overview mcp__mcpwerk-search-console__list_properties
+allowed-tools: mcp__mcpwerk-gsc__compare_search_periods mcp__mcpwerk-gsc__get_performance_overview mcp__mcpwerk-gsc__list_properties
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -59,6 +59,22 @@ geblieben ist.
 
 **Eine Maßnahme**, konkret: welche Seite, was genau (Title prüfen, internen
 Link setzen, Inhalt aktualisieren, abwarten).
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Export für diesen Skill: Search Console → Leistung → oben „Vergleichen"
+mit zwei gleich langen Zeiträumen → Export → CSV. Aus der Datei
+`Seiten.csv` (bzw. „Pages") die Spalten „Seite", „Klicks (aktueller
+Zeitraum)", „Klicks (Vergleichszeitraum)", „Position …" nutzen; die
+Datei `Suchanfragen.csv` nur zur Einordnung. Fehlt der Vergleich im
+Export, bitte um einen zweiten Export für den Vorzeitraum.
 
 ## Regeln
 

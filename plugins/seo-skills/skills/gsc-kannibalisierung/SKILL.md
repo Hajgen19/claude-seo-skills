@@ -1,9 +1,9 @@
 ---
 name: gsc-kannibalisierung
-description: Prüft Keyword-Kannibalisierung in der Search Console: Suchanfragen mit zwei oder mehr eigenen URLs, Schweregrad, Empfehlung. Nutzen bei Kannibalisierung, cannibalization, vor neuen Seiten.
+description: Prüft Keyword-Kannibalisierung in der Search Console: Suchanfragen mit zwei oder mehr eigenen URLs, Schweregrad, Empfehlung – per MCP oder CSV-Export. Nutzen bei Kannibalisierung, cannibalization.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Search-Console-MCP mit get_advanced_search_analytics (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
-allowed-tools: mcp__mcpwerk-search-console__get_advanced_search_analytics mcp__mcpwerk-search-console__list_properties
+allowed-tools: mcp__mcpwerk-gsc__get_advanced_search_analytics mcp__mcpwerk-gsc__list_properties
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -54,6 +54,22 @@ nichts.
 Darunter zwei Sätze: wie viele Anfragen geprüft wurden und ob es ein
 Muster gibt (z. B. Übersichtsseite gegen Detailseite, Doku gegen
 Produktseite).
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Die Oberfläche exportiert Suchanfragen und Seiten getrennt, nicht als
+Paar. Ohne MCP prüfst du deshalb **eine Suchanfrage je Durchgang**:
+Search Console → Leistung → Filter „Suchanfrage" auf den Begriff → Tab
+„Seiten" → Export → CSV. Die Datei zeigt alle URLs, die für diese Anfrage
+ranken, mit Klicks, Impressionen, Position. Für eine ganze Property ist
+der MCP-Weg der einzige praktikable; sag das offen.
 
 ## Regeln
 

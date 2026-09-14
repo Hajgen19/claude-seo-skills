@@ -1,9 +1,9 @@
 ---
 name: gsc-chancen-keywords
-description: Findet Chancen-Keywords in der Search Console: viele Impressionen, Position 8 bis 20, schwache Klickrate, mit Title-Empfehlung. Nutzen bei Chancen-Keywords, Striking Distance, Seite 2.
+description: Findet Chancen-Keywords in der Search Console: viele Impressionen, Position 8 bis 20, schwache Klickrate, Title-Empfehlung – per MCP oder CSV-Export. Nutzen bei Chancen-Keywords, Striking Distance.
 license: MIT
 compatibility: Benötigt einen verbundenen Google-Search-Console-MCP mit get_advanced_search_analytics und get_search_by_page_query (entwickelt gegen den gehosteten mcpwerk-Server, Stufe "Lesen" reicht).
-allowed-tools: mcp__mcpwerk-search-console__get_advanced_search_analytics mcp__mcpwerk-search-console__get_search_by_page_query mcp__mcpwerk-search-console__list_properties
+allowed-tools: mcp__mcpwerk-gsc__get_advanced_search_analytics mcp__mcpwerk-gsc__get_search_by_page_query mcp__mcpwerk-gsc__list_properties
 metadata:
   author: mcpwerk
   version: "0.1"
@@ -50,6 +50,22 @@ Du liest nur, du änderst nichts.
 Für die drei stärksten: je eine Empfehlung in einem Satz, was am Title
 oder Snippet der rankenden URL fehlt, damit die Anfrage klickt (Begriff
 nicht im Title, kein Nutzenversprechen, Snippet passt nicht zur Frage).
+
+## Ohne MCP: mit CSV-Export
+
+Ohne verbundenen MCP arbeitest du mit einem Export, den der Nutzer einfügt
+oder hochlädt. Sag dann in einem Satz, dass der Datenstand der Export-
+Zeitpunkt ist und jede weitere Frage einen neuen Export braucht; mit MCP
+entfällt das. Erkenne Spalten anhand der Überschriften (deutsch oder
+englisch), rechne Dezimalkommas und Prozentzeichen um und nenne, welche
+Spalten du benutzt hast.
+
+Export für diesen Skill: Search Console → Leistung → Zeitraum 28 Tage →
+Export → CSV → Datei `Suchanfragen.csv` (Spalten Suchanfrage, Klicks,
+Impressionen, CTR, Position). Filtere wie im Ablauf. Die rankende URL je
+Anfrage steht nicht in dieser Datei; nenne sie nur, wenn der Nutzer einen
+zweiten Export mit Filter auf die Anfrage liefert, sonst lass die Spalte
+leer und sag es.
 
 ## Regeln
 

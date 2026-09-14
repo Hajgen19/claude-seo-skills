@@ -9,8 +9,8 @@
     {
       "name": "seo-skills",
       "source": "./plugins/seo-skills",
-      "description": "Sechs SEO-Skills für Claude, die ihre Daten live per MCP holen: Search Console (Wochen-Check, Chancen-Keywords, Kannibalisierung, Indexierung), GA4 (Zeitraum-Vergleich) und Google Ads (Budget-Check). Deutsch, nur lesende Befehle.",
-      "version": "0.1.0",
+      "description": "Sieben SEO-Skills für Claude: sechs Routinen und Audits mit Live-Daten per MCP oder CSV-Export (Search Console, GA4, Google Ads) plus die vollständige Keyword-Recherche seo-page-research für Claude Code. Deutsch, nur lesende Befehle.",
+      "version": "0.2.0",
       "author": {
         "name": "Hagen Krocker",
         "url": "https://mcpwerk.com/autor/hagen-krocker"
